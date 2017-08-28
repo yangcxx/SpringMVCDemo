@@ -1,5 +1,6 @@
 package org.format.demo.controller;
 
+import org.format.demo.editor.DateEditor;
 import org.format.demo.model.Employee;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.stereotype.Controller;
@@ -65,13 +66,8 @@ public class TestController {
      */
     @InitBinder
     public void initBinder(WebDataBinder binder) {
-        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
-        binder.registerCustomEditor(Date.class, new CustomDateEditor(format, false));
+        binder.registerCustomEditor(Date.class,new DateEditor());
     }
 
-    @ExceptionHandler
-    public void exceptionHandler(){
-
-    }
 
 }
