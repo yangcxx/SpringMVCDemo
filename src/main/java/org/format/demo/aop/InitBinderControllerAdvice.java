@@ -2,7 +2,6 @@ package org.format.demo.aop;
 
 import org.format.demo.editor.DateEditor;
 import org.springframework.web.bind.WebDataBinder;
-import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.InitBinder;
 
 import java.util.Date;
@@ -16,7 +15,7 @@ import java.util.Date;
  * @since: Thinkingbar Web Project 1.0
  */
 
-@ControllerAdvice
+//@ControllerAdvice
 public class InitBinderControllerAdvice {
 
     @InitBinder
