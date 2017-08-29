@@ -60,7 +60,7 @@ public class TestController {
 
 
     /**
-     * 类型转换器 - 处理请求时会被初始化
+     * 类型转换器配置方式一：Controller 中 @InitBinder 方法
      *
      * @param binder
      */

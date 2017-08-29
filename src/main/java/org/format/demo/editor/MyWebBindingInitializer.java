@@ -7,7 +7,7 @@ import org.springframework.web.context.request.WebRequest;
 import java.util.Date;
 
 /**
- * Function: TODO
+ * Function: 类型转换器配置方式一：实现接口 WebBindingInitializer
  * Reason: TODO ADD REASON(可选).</br>
  * Date: 2017/8/29 0:09 </br>
  *

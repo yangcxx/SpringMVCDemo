@@ -7,7 +7,7 @@ import java.beans.PropertyEditorSupport;
 import java.text.ParseException;
 
 /**
- * Function: TODO
+ * Function: 自定义属性转换器 - 继承自 PropertyEditorSupport 并重写 setAsText 方法
  * Reason: TODO ADD REASON(可选).</br>
  * Date: 2017/8/25 16:21 </br>
  *
