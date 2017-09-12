@@ -53,10 +53,9 @@ public class TestErrorController {
     }*/
 
     @ExceptionHandler(NullPointerException.class)
-    public ModelAndView error(NullPointerException exception, ModelAndView mav) {
+    public ModelAndView error(ModelAndView mav) {
         mav.setViewName("error");
         mav.addObject("param", "NullPointer error");
-        mav.addObject("msg", exception.getMessage());
         return mav;
     }
 
