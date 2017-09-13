@@ -1,13 +1,7 @@
-import org.apache.commons.lang3.StringUtils;
-import org.format.demo.model.Person;
-import org.format.demo.model.TestModel;
-import org.springframework.beans.BeanWrapper;
-import org.springframework.beans.BeanWrapperImpl;
-import org.springframework.beans.propertyeditors.CustomDateEditor;
+package test;
 
-import java.text.SimpleDateFormat;
-import java.util.Arrays;
-import java.util.Date;
+import org.format.demo.model.Person;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -21,7 +15,7 @@ import java.util.Map;
  */
 public class MainTest {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Map<Person, String> testMap = new HashMap<Person, String>();
 
         Person p1 = new Person();
@@ -56,15 +50,15 @@ public class MainTest {
         System.out.println("Hash Code of elements in HashMap");
         for (Map.Entry<Person, String> entry : testMap.entrySet()) {
             System.out.println(entry.getKey() + ":" + entry.getValue() + ":"
-            + entry.getKey().hashCode());
+                    + entry.getKey().hashCode());
             System.out.println();
             if (entry.getKey().getName().equals("Jakie")) {
                 System.out.println("Jakie in map is the original jakie "
-                + (entry.getKey() == p1));
+                        + (entry.getKey() == p1));
             } else if (entry.getKey().getName().equals("Jerry is now kelly")) {
                 System.out
                         .println("Jerry is now kelly in map is the original Jerry "
-                + (entry.getKey() == p2));
+                                + (entry.getKey() == p2));
             }
         }
 

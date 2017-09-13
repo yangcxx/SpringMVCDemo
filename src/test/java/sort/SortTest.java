@@ -1,4 +1,4 @@
-package model;
+package sort;
 
 import java.util.Arrays;
 
@@ -10,12 +10,12 @@ import java.util.Arrays;
  * @author: cx.yang
  * @since: Thinkingbar Web Project 1.0
  */
-public class UseArray {
+public class SortTest {
 
     private int[] array;
     private int number = 0;
 
-    public UseArray(int max) {
+    public SortTest(int max) {
         array = new int[max];
     }
 
@@ -83,10 +83,10 @@ public class UseArray {
     public static void main(String[] args) {
         //int array[] = new int[10];
         //System.out.println(array[2]);//0
-        //UseArray a[] = new UseArray[12];
+        //SortTest a[] = new SortTest[12];
         //System.out.println(a[1]);//对象初始化 - null
         //int array2[] ={1,2,3,4,5,5,6};
-        /*UseArray ua = new UseArray(5);
+        /*SortTest ua = new SortTest(5);
         ua.insert(1);
         ua.insert(2);
         ua.insert(6);
@@ -150,9 +150,27 @@ public class UseArray {
 
 
         //计数排序
-        int[] a4 = {1, 3, 2, 1, 4, 2, 5, 7, 3};
-        int[] ints = countSort(a4, 7);
+        int[] a4 = {1, 2, 3, 4, 4, 4, 3, 1, 2, 3};
+        int[] ints = countSort(a4, 4);
         System.out.println("计数排序---" + Arrays.toString(ints));
+
+        int a5[] = {1, 2, 3, 4, 4, 4, 3, 1, 2, 3};
+        int c[] = new int[5];
+        for (int i = 0; i < c.length; i++) {
+            for (int j = 0; j < a5.length; j++) {
+                if (a5[j] == i) {
+                    c[i]++;
+                }
+            }
+        }
+        int index = 0;
+        for (int j = 0; j < c.length; j++) {
+            for (int i = index; i < index + c[j]; i++) {
+                a5[i] = j;
+            }
+            index += c[j];
+        }
+        System.out.println(Arrays.toString(a));
 
     }
 
@@ -175,3 +193,4 @@ public class UseArray {
     }
 
 }
+
