@@ -1,3 +1,5 @@
+package test;
+
 /**
  * Function: 单向队列模拟
  * Reason: TODO ADD REASON(可选).</br>

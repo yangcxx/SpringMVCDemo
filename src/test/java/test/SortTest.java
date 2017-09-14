@@ -1,3 +1,5 @@
+package test;
+
 import java.util.Arrays;
 
 /**
@@ -81,10 +83,10 @@ public class SortTest {
     public static void main(String[] args) {
         //int array[] = new int[10];
         //System.out.println(array[2]);//0
-        //SortTest a[] = new SortTest[12];
+        //test.SortTest a[] = new test.SortTest[12];
         //System.out.println(a[1]);//对象初始化 - null
         //int array2[] ={1,2,3,4,5,5,6};
-        /*SortTest ua = new SortTest(5);
+        /*test.SortTest ua = new test.SortTest(5);
         ua.insert(1);
         ua.insert(2);
         ua.insert(6);
