@@ -1,4 +1,4 @@
-package test;
+package test.collection;
 
 /**
  * Function: 单向队列模拟

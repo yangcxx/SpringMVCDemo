@@ -1,4 +1,4 @@
-package test;
+package test.collection;
 
 /**
  * Function: TODO
@@ -62,7 +62,7 @@ public class Queue_old {
 
     public static void main(String[] args) {
         Queue_old q = new Queue_old(4);
-        System.out.println("test.Queue_old is empty:" + q.isEmpty());
+        System.out.println("test.collection.Queue_old is empty:" + q.isEmpty());
 
         q.insert(1);
         q.insert(2);

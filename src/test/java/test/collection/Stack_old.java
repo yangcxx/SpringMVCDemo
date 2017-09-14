@@ -1,4 +1,4 @@
-package test;
+package test.collection;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -63,7 +63,7 @@ public class Stack_old {
 
     @Override
     public String toString() {
-        return "test.Stack_old{" +
+        return "test.collection.Stack_old{" +
                 "array=" + Arrays.toString(array) +
                 ", length=" + length +
                 ", top=" + top +
@@ -86,7 +86,7 @@ public class Stack_old {
         System.out.println("-----------------------");
         //Scanner sc = new Scanner(System.in);
         //String nextLine = sc.nextLine();
-        //test.Stack_old stack = new test.Stack_old(nextLine.length());
+        //test.collection.Stack_old stack = new test.collection.Stack_old(nextLine.length());
         //System.out.println(stack.reserve(nextLine));
         InputStreamReader inputStreamReader = new InputStreamReader(System.in);
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
