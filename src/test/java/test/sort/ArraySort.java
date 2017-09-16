@@ -1,6 +1,7 @@
 package test.sort;
 
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * Function: 排序
@@ -134,15 +135,22 @@ public class ArraySort {
     }
 
     public static void main(String[] args) {
-        int[] array1 = {4, 2, 5, 8, 1, 3, 5, 4, 6, 3, 1};
-        int[] array2 = {4, 2, 5, 8, 1, 3, 5, 4, 6, 3, 1};
-        int[] array3 = {4, 2, 5, 8, 1, 3, 5, 4, 6, 3, 1};
-        int[] array4 = {4, 2, 5, 8, 1, 3, 5, 4, 6, 3, 1};
-        int[] array5 = {4, 2, 5, 8, 1, 3, 5, 4, 6, 3, 1};
-        System.out.println("插入排序： " + Arrays.toString(insertSort(array1)));
-        System.out.println("选择排序： " + Arrays.toString(selectSort(array2)));
-        System.out.println("计数排序： " + Arrays.toString(countSort(array3, 8)));
-        System.out.println("没搞懂 - 快速排序： " + Arrays.toString(quickSort(array4, 0, array4.length - 1)));
-        System.out.println("冒泡排序： " + Arrays.toString(bubblingSort(array5)));
+        //int[] array1 = {4, 2, 5, 8, 1, 3, 5, 4, 6, 3, 1};
+        //int[] array2 = {4, 2, 5, 8, 1, 3, 5, 4, 6, 3, 1};
+        //int[] array3 = {4, 2, 5, 8, 1, 3, 5, 4, 6, 3, 1};
+        //int[] array4 = {4, 2, 5, 8, 1, 3, 5, 4, 6, 3, 1};
+        //int[] array5 = {4, 2, 5, 8, 1, 3, 5, 4, 6, 3, 1};
+        //System.out.println("插入排序： " + Arrays.toString(insertSort(array1)));
+        //System.out.println("选择排序： " + Arrays.toString(selectSort(array2)));
+        //System.out.println("计数排序： " + Arrays.toString(countSort(array3, 8)));
+        //System.out.println("没搞懂 - 快速排序： " + Arrays.toString(quickSort(array4, 0, array4.length - 1)));
+        //System.out.println("冒泡排序： " + Arrays.toString(bubblingSort(array5)));
+
+        Integer[] array1 = {4, 2, 5, 8, 1, 3, 5, 4, 6, 3, 1};
+        List<Integer> ints = Arrays.asList(array1);
+
+        String[] s = {"aa", "bb", "cc"};
+        List<String> list = Arrays.asList(s);
+        System.out.println(list.size());
     }
 }

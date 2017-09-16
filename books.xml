@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+    <book id="01" name="book1">
+        <title>
+            Harry Potter
+        </title>
+        <author>
+            J K. Rowling
+        </author>
+    </book>
+    <book id="02" name="book2">
+        <title>
+            Thinking in Java
+        </title>
+        <author>
+            Bruce
+        </author>
+    </book>
+</books>
