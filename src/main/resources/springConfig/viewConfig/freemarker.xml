@@ -6,7 +6,7 @@
           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"
           default-autowire="byName">
 
-    <bean class="org.format.demo.viewResolver.CustomViewResolver">
+    <bean class="org.format.demo.viewresolver.CustomViewResolver">
         <!--
             属性prefix是给jsp视图使用的，freemarker视图不需要prefix
             cxy Freemarker 内部会使用配置的FreeMarkerConfigure，并使用FreeMarkerConfigure内部的 templateLoaderPath 属性作为前缀
@@ -35,7 +35,7 @@
     </bean>
 
     <!-- freemarker视图  -->
-    <!--<bean id="viewResolver" class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+    <!--<bean id="viewresolver" class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
         <property name="viewClass" value="org.springframework.web.servlet.view.freemarker.FreeMarkerView"></property>
         <property name="suffix" value=".ftl" />
         <property name="contentType" value="text/html;charset=utf-8" />

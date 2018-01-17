@@ -52,8 +52,8 @@
     <mvc:resources location="/static/" mapping="/static/**"/>
     <mvc:annotation-driven>
         <mvc:argument-resolvers>
-            <bean class="org.format.demo.argumentResolver.FormObjArgumentResolver"/>
-            <bean class="org.format.demo.argumentResolver.CustomerArgumentResolver"/>
+            <bean class="org.format.demo.argumentresolver.FormObjArgumentResolver"/>
+            <bean class="org.format.demo.argumentresolver.CustomerArgumentResolver"/>
         </mvc:argument-resolvers>
     </mvc:annotation-driven>
     <context:component-scan base-package="org.format.demo.controller" >
@@ -66,9 +66,9 @@
     <import resource="classpath:springConfig/viewConfig/customViewResolverConfig.xml"/>
     <import resource="classpath:springConfig/viewConfig/jsp.xml"/>
 
-    <bean class="org.format.demo.exception.resolver.MyExceptionHandlerExceptionResolver">
-        <property name="order" value="-1"/>
-    </bean>
+    <!--<bean class="org.format.demo.exception.resolver.MyExceptionHandlerExceptionResolver">-->
+        <!--<property name="order" value="-1"/>-->
+    <!--</bean>-->
 
 
 </beans>

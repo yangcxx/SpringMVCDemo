@@ -6,6 +6,7 @@
 
     <groupId>org.format.demo</groupId>
     <artifactId>springmvc</artifactId>
+    <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>

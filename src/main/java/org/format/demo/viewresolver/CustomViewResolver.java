@@ -1,4 +1,4 @@
-package org.format.demo.viewResolver;
+package org.format.demo.viewresolver;
 
 import lombok.Getter;
 import lombok.Setter;

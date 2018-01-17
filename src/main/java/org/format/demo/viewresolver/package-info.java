@@ -6,4 +6,4 @@
  * @author: cx.yang
  * @since: Thinkingbar Web Project 1.0
  */
-package org.format.demo.viewResolver;
+package org.format.demo.viewresolver;

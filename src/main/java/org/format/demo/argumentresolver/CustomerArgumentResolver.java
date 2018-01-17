@@ -1,4 +1,4 @@
-package org.format.demo.argumentResolver;
+package org.format.demo.argumentresolver;
 
 import org.apache.commons.lang3.StringUtils;
 import org.format.demo.annotation.CustomAnno;

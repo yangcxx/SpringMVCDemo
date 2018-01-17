@@ -24,3 +24,5 @@
 hs_err_pid*
 /SpringMVCDemo.iml
 /.idea/
+/springmvc.iml
+/target/
