@@ -56,7 +56,7 @@
             <tx:method name="query*" read-only="true"/>
             <tx:method name="find*" read-only="true"/>
             <tx:method name="load*" read-only="true"/>
-            <tx:method name="*" rollback-for="Exception" propagation="REQUIRED"/>
+            <tx:method name="*" rollback-for="Exception"/>
         </tx:attributes>
     </tx:advice>
 

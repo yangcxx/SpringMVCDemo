@@ -14,10 +14,12 @@ public class DeptService implements IDeptService {
     @Autowired
     private BaseDao baseDao;
 
+    @Override
     public List<Dept> listAll() {
         return (List<Dept>)baseDao.listAll(Dept.class);
     }
 
+    @Override
     public void saveOrUpdate(Dept dept) {
         baseDao.saveOrUpdate(dept);
     }
