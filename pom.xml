@@ -12,6 +12,9 @@
     <properties>
     	<jetty.version>9.2.22.v20170606</jetty.version>
     	<spring.version>4.0.2.RELEASE</spring.version>
+	<!--解决console乱码 TODO 待测试-->
+	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
 
     <dependencies>
