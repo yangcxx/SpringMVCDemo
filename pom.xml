@@ -8,12 +8,18 @@
     <artifactId>springmvc</artifactId>
     <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
+	
+    <!--Maven 3.x-->
+    <reporting>
+    	<outputEncoding>UTF-8</outputEncoding>
+    </reporting>
          
     <properties>
     	<jetty.version>9.2.22.v20170606</jetty.version>
     	<spring.version>4.0.2.RELEASE</spring.version>
 	<!--解决console乱码 TODO 待测试-->
 	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<!--Maven 2.x-->
     	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
 
